@@ -1,0 +1,245 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 1.7em;
+	margin: 17px;
+	max-width: 750px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-weight: bold;
+	color: #749AB6;
+}
+
+p.example
+{
+	border: solid 1px #BECFDC;
+	background-color: #DEE8F0;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+}
+
+p.note
+{
+	color: #616E14;
+	border: solid 1px #BFD62F;
+	background-color: #DAE691;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 14px 20px;
+	font-size: 10pt;
+	border-bottom-color: #dae691;
+}
+
+a
+{
+	color: #5B8EC1;
+}
+
+MadCap|expanding
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	mc-image-position: left;
+}
+
+MadCap|dropDown
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+}
+
+MadCap|toggler
+{
+	mc-open-image: url('resources:Images/WebHelp/minus.png');
+	mc-closed-image: url('resources:Images/WebHelp/plus.png');
+	color: inherit;
+}
+
+MadCap|popupHead
+{
+	color: #5B8EC1;
+}
+
+MadCap|popupBody
+{
+	color: #EBEBEB;
+	border: none;
+	background-color: rgba(0, 0, 0, .85);
+	padding: 11px 15px;
+}
+
+MadCap|glossaryTerm
+{
+	
+}
+
+MadCap|glossaryTerm.Expanding
+{
+	color: inherit;
+	font-weight: inherit;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	color: #5B8EC1;
+	font-weight: inherit;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	color: #5B8EC1;
+	font-weight: normal;
+}
+
+MadCap|conceptLink
+{
+	color: #000000;
+}
+
+MadCap|keywordLink
+{
+	color: #000000;
+}
+
+MadCap|relatedTopics
+{
+	color: #000000;
+}
+
+MadCap|helpControlMenu
+{
+	color: #707070;
+	background-color: #FFFFFF;
+	border: none;
+}
+
+MadCap|helpControlMenuItem
+{
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+MadCap|helpControlMenuItem.Highlighted
+{
+	color: #000000;
+	background-color: #E5EFF7;
+}
+
+h1
+{
+	font-family: Arial;
+	margin-left: 0pt;
+	color: #595959;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 33px;
+	margin: 0pt 0pt 17px;
+}
+
+h2
+{
+	font-family: Arial;
+	color: #595959;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0pt 0pt 15px;
+}
+
+h3
+{
+	font-family: Arial;
+	color: #595959;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 0pt 0pt 11px;
+}
+
+p
+{
+	font-family: Arial;
+	margin-bottom: 6pt;
+	margin: 0pt 0pt 6pt;
+	font-size: 14px;
+	color: #595959;
+	font-weight: lighter;
+}
+
+p.Indent_1cm
+{
+	margin-left: 1cm;
+}
+
+MadCap|dropDownHead
+{
+	font-family: Arial;
+	border-left: solid 2px #f5f5f5;
+	border-top: solid 2px #f5f5f5;
+	color: #595959;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+p.grafik
+{
+	color: #228b22;
+	font-family: 'Courier New';
+}
+
+section
+{
+	color: #000000;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+label
+{
+	color: #000000;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+q
+{
+	color: #595959;
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+li
+{
+	color: #595959;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+p.section
+{
+	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 18px;
+	margin: 18px 0px;
+}
+

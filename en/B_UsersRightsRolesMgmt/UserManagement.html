@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="_Skins_CDH2_skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>User management</title>
+        <script>/* <![CDATA[ */
+			document.title=document.title + " - Customer Data Hub";
+			/* ]]> */</script>
+        <!-- Matomo -->
+        <script type="text/javascript">/* <![CDATA[ */
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setCookieDomain", "*.docu.cdh2.net"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="https://analytics.cdh2.net/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		/* ]]> */</script>
+        <noscript>
+            <p>
+                <img src="https://analytics.cdh2.net/piwik.php?idsite=2&amp;rec=1" style="border: 0;" alt="" />
+            </p>
+        </noscript>
+        <!-- End Matomo Code -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.select-language-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/select-language.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/EinzugE5.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.html" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxybody-container _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic Separator Print SelectBrowseSequence Separator SelectLanguage;">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                        </button>
+                                        <button class="button needs-pie next-topic-button" title="Navigate next">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie print-button" title="Print">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie select-language-button" title="Change language">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="topic-container">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <h2>User management</h2>
+                                    <p>With the CDH2 user management you can add and remove users, change their settings, or upload an entire list of users from an external source.</p>
+                                    <ul style="list-style-type: disc;margin-left: 19pt;">
+                                        <li style="list-style-type: disc;" value="1">The CDH2 user management displays all your users in a single table.</li>
+                                        <li style="list-style-type: disc;" value="2">To access the CDH2 user management click on 'Administration' in the top menu of the CDH2 page.</li>
+                                        <li value="3">Click on 'User management' in the 'Administration' menu on the left hand side of the screen.</li>
+                                    </ul>
+                                    <table style="mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                        <col style="width: 50mm;" class="TableStyle-EinzugE5-Column-Column1" />
+                                        <col class="TableStyle-EinzugE5-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                    <p class="section">Important notice:</p>
+                                                </td>
+                                                <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                    <p>You will need administrator rights to get access to the CDH2 user management function. Without these rights your access will be denied.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>
+                                        <img src="../Resources/Images/B_UsersRightsRolesMgmt/UserManagement_Overview_01_v1.png" title="" alt="" />
+                                    </p>
+                                    <hr width="100%" size="0" align="center" />
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to manage your users?</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>The CDH2 user management provides you with the following functions:</p>
+                                            <table style="mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col style="width: 50mm;" class="TableStyle-EinzugE5-Column-Column1" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Add user:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Click the 'Add user' button to open the 'Add user' page. There you can define all necessary settings for new user that shall be added to your existing users.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Import users:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>By clicking 'Import users' you are going to open the 'Import new user' page. You can upload entire lists of users from a MS Excel file into your user management.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Export users:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>tbd.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Edit user:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>an 'Edit' button is attached to each line. Click on the button to open the 'Edit user' page. There you can change all necessary settings for the respective user.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Delete:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>You can delete users by selecting them from the list. Activate the check box in the first table cell of a user. Click on the 'Delete' button to delete all selected users in one single step. To delete a single user you can also click on one of the 'Delete' buttons that are attached to each line. These 'Delete' buttons are characterized with the paper bucket symbol.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Deactivate:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>You can deactivate a user's account by selecting them from the list. Activate the check box in the first table cell of a user. Click on the 'Deactivate' button to deactivate all selected user accounts in one single step.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Sort filter for each Column:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>The list of users can be sorted by using the sort filter applied to each column of the list. Click on the 'Up' or 'Down' arrow button next to each column heading. The arrow buttons will only be visible, when your mouse cursor hovers over the respective column heading. The list can be sorted in ascending or descending order either alphabetically, with fields containing strings, or by number or date.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Free text search filter:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Enter a search string to filter your list. The list will be filtered according to the entry in the input line. Thus, a smaller portion of the entire list will be displayed as a result.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Pagination settings:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Information about pagination and side navigation are displayed in the bottom line of the page. From any page you can jump to the next or the previous page by clicking the arrow buttons. The total number of pages is displayed as well as the current page. You can jump to a specific page by entering the respective page number in field with current page number. Additionally you can define how many rows of your user table should appear on your page.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p class="section">Example:</p>
+                                            <p class="section">
+                                                <img src="../Resources/Images/B_UsersRightsRolesMgmt/UserManagement_TableView_01_v2.png" alt="" title="" />
+                                            </p>
+                                            <p class="grafik">UserManagement_TableView_01_v2</p>
+                                            <p class="section">Details:</p>
+                                            <p>Content that is displayed in the table:</p>
+                                            <table style="mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col style="width: 50mm;" class="TableStyle-EinzugE5-Column-Column1" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Full name:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>First name and last name of a user.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>User name / E-mail:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Login ID of a user. Generally the users e-mail address.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Login time:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Date and time when the user logged in to the system. The appearance of date and time depends on the individual localization settings of a user. In this example the format is 'YYYY-MM-DD h:mm'. The user here is of course the system administrator.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Logout:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Date and time when the user logged out from the system. The format settings are the same as for 'Login time'.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Type:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>(Regular, SSO) tbd.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Status:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>(Success, Failure) tbd.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Device:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Browser, browser version, operation system and version of the operating system are displayed here.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Location:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Location of the user's client application, according to the settings in the user's individual user profile.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <hr width="100%" size="0" align="center" />
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to add a user?</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>As a system administrator or access manager you will have to add user account to your CDH2 user management. In this case, you have to assign certain settings to a specific user account. A user can see these settings in his own user profile. Within narrow restriction a user will be able to overwrite your settings by his own settings, like defining a new password.</p>
+                                            <p>Use the 'Add user' function to add a new user account to your user management.</p>
+                                            <ul style="list-style-type: disc;margin-left: 19pt;">
+                                                <li style="list-style-type: disc;" value="1">Click on the 'Add user' button in the user management view of the CDH2 administration. The 'Add user' page will be displayed.</li>
+                                                <li style="list-style-type: disc;" value="2">Enter the necessary user credentials into the input fields of the 'Add user' page.</li>
+                                                <li style="list-style-type: disc;" value="3">Select the respective localization entries for the user from the drop-down fields.</li>
+                                                <li style="list-style-type: disc;" value="4">Select at least one role that apply to the respective user from the drop-down field.</li>
+                                                <li style="list-style-type: disc;" value="5">Select the team that belongs to the respective user from the drop-down field.</li>
+                                                <li style="list-style-type: disc;" value="6">Define whether the new account is supposed to be active, inactive or intended for being valid for limited period of time.</li>
+                                                <li style="list-style-type: disc;" value="7">Click on 'Add user' to add the user to your user management table and to submit a notification to this user.</li>
+                                                <li style="list-style-type: disc;" value="8">Click 'Cancel' to abort and get back to the user management view.</li>
+                                            </ul>
+                                            <p>As a result a user record will be created and added to the list view in your user management view. The user will be notified automatically by an e-mail. This e-mail prompts the user to define a new password for his or her account.</p>
+                                            <p class="section">Details</p>
+                                            <p>
+                                                <img src="../Resources/Images/B_UsersRightsRolesMgmt/UserManagement_AddUser_01_v1.png" />
+                                            </p>
+                                            <p class="grafik">UserManagement_AddUser_01_v1</p>
+                                            <table style="mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col style="width: 50mm;" class="TableStyle-EinzugE5-Column-Column1" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>First (Last-) name</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Enter a first and a last name into these input fields. These fields are mandatory.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Language &amp; country</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Choose a language / country combination from the list field. The entries in the dropdown field are sorted alphabetically according to the language. Your choice defines the working language and predefines the settings in the time zone field. This field is mandatory.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Time zone</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Choose the time zone of the location of the working place in the dropdown field. This entry is necessary to set time stamps for each event triggered by users for their respective local time. The entries are sorted alphabetically by principal cities like Amsterdam, Berlin, Paris or Yaundé. These cities are representing the 'UTC +01:00' time zone. The 'UTC + 01:00' time zone, for instance, is identical with CET (Central European Time) or WAT (West Africa Time). This field is mandatory</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Login / E-mail:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Enter the users e-mail address. It is used as a login ID. This field is mandatory.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Roles:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Select at least one role from the drop-down field that applies to this user. The provided roles are either predefined by the CDH2 system or defined by system administrator or access managers. This is a mandatory field. For further information about roles see tbd..</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Teams:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Select a team from the drop-down field that applies to this user. Teams are independent from the rights and roles assigned to a user. Prevailingly they are used for assigning tasks. For further information about teams see tbd..</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Additional account settings:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Click on the required radio button to define, whether the user account has to be active, inactive or will expire after a specific period of time. If the account is supposed to expire enter an expiration date in the field ‘Expiration date’.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <hr width="100%" size="0" align="center" />
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to edit the settings of an existing user?</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>As a system administrator or access manager you might have to change the settings for an individual user account. After these changes a user will see these settings in his own user profile.</p>
+                                            <p>Use the 'Add user' function to add a new user account to your user management.</p>
+                                            <ul style="list-style-type: disc;margin-left: 19pt;">
+                                                <li style="list-style-type: disc;" value="1">Click on the 'Edit' button that is attached to each user record in the user management view. The 'Edit user' page will be displayed.</li>
+                                                <li style="list-style-type: disc;" value="2">Change the required user credentials in the input fields of the 'Edit user' page.</li>
+                                                <li style="list-style-type: disc;" value="3">Choose different localization entries for the respective user in the drop-down fields.</li>
+                                                <li style="list-style-type: disc;" value="4">Choose a different role or add a new role to the user's profile from the drop-down field.</li>
+                                                <li style="list-style-type: disc;" value="5">Choose a different team or add a new team to the user's profile from the drop-down field.</li>
+                                                <li style="list-style-type: disc;" value="6">Define whether the account is supposed to be active, inactive or intended for being valid for limited period of time.</li>
+                                                <li style="list-style-type: disc;" value="7">Click on 'Save' to confirm the changed settings.</li>
+                                                <li style="list-style-type: disc;" value="8">Click 'Revert changes' to restore the previous settings.</li>
+                                            </ul>
+                                            <p>As a result the changed user record will appear in the list view of your user management. The user will not be notified about this changes. However, the user will be able to see the new settings in his user profile.</p>
+                                            <p class="section">Details</p>
+                                            <p>
+                                                <img src="../Resources/Images/B_UsersRightsRolesMgmt/UserManagement_EditUser_01_v1.png" />
+                                            </p>
+                                            <p class="grafik">UserManagement_EditUser_01_v1</p>
+                                            <p>&#160;</p>
+                                            <table style="mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col style="width: 50mm;" class="TableStyle-EinzugE5-Column-Column1" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>First (Last-) name</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Enter a first and a last name into these input fields. These fields are mandatory.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Language &amp; country</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Choose a language / country combination from the drop-down field. The entries are sorted alphabetically according to the language. Your choice defines the working language and predefines the settings in the time zone field. This field is mandatory.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Time zone</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Choose the time zone of the location of the working place in the dropdown field. This entry is necessary to set time stamps for each event triggered by users for their respective local time. The entries are sorted alphabetically by principal cities like Amsterdam, Berlin, Paris or Yaundé. These cities are representing the 'UTC +01:00' time zone. The 'UTC + 01:00' time zone, for instance, is identical with CET (Central European Time) or WAT (West Africa Time). This field is mandatory</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Login / E-mail:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Enter the users e-mail address. It is used as a login ID. This field is mandatory.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Roles:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Select at least one role from the drop-down field that applies to this user. The provided roles are either predefined by the CDH2 system or defined by system administrator or access managers. This is a mandatory field. For further information about roles see tbd..</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Teams:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Select a team from the drop-down field that applies to this user. Teams are independent from the rights and roles assigned to a user. Prevailingly they are used for assigning tasks. For further information about teams see tbd..</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Additional account settings:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Click on the required radio button to define, whether the user account has to be active, inactive or will expire after a specific period of time. If the account is supposed to expire enter an expiration date in the field 'Expiration date'.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <hr width="100%" size="0" align="center" />
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to import new users into CDH2?</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>You can import new users into the CDH2 user management by uploading a MS Excel file with user data</p>
+                                            <table style="mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col style="width: 50mm;" class="TableStyle-EinzugE5-Column-Column1" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Instructions:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>tbd.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                    <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                        <p>Important note:</p>
+                                                    </td>
+                                                    <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                        <p>Existing users and their respective settings will not be changed by that upload.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>
+                                                <img src="../Resources/Images/B_UsersRightsRolesMgmt/UserManagement_ImportUser_01_v1.png" />
+                                            </p>
+                                            <p class="grafik">UserManagement_ImportUser_01_v1</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>User name / E-Mail</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>First name</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Last name</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Creation date</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Status</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Expiration date</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Assigned roles</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Assigned teams</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>tbd.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <hr width="100%" size="0" align="center" />
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to reset a user's password?</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>The reset of a user's account password is triggered by a request for password reset. A user will send this request in case he has forgotten his password. As a system administrator or access manager you will be notified by an e-mail about this incident. The user's password needs to be reset, so that the user is able to define a new password.</p>
+                                            <p>These are your next steps:</p>
+                                            <ul style="list-style-type: disc;margin-left: 19pt;">
+                                                <li style="list-style-type: disc;" value="1">Choose 'Administration' in the top menu of CDH2.</li>
+                                                <li style="list-style-type: disc;" value="2">Click on 'User Management' in the administration menu.</li>
+                                                <li style="list-style-type: disc;" value="3">Select the user, who has forgotten his password from the user list. You can use the search line to filter the list by entering the user's name.</li>
+                                                <li style="list-style-type: disc;" value="4">Click on the 'Edit' button attached to the user. The 'Edit users' page will be opened.</li>
+                                                <li style="list-style-type: disc;" value="5">Click on the 'Reset password' button in the 'Reset password' section of the page. The user will get an e-mail notification and a request to define a new account password.</li>
+                                            </ul>
+                                            <p class="section">Example:</p>
+                                            <p>
+                                                <img src="../Resources/Images/B_UsersRightsRolesMgmt/UserManagement_PasswordReset_01_v1.png" />
+                                            </p>
+                                            <p class="grafik">UserManagement_PasswordReset_01_v1</p>
+                                        </div>
+                                    </div>
+                                    <hr width="100%" size="0" align="center" />
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to delete a user?</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Three different ways allows you to delete a user and his/her account from your user management.</p>
+                                            <ul style="list-style-type: disc;margin-left: 19pt;">
+                                                <li style="list-style-type: disc;" value="1">Choose 'Administration' in the top menu of CDH2.</li>
+                                                <li style="list-style-type: disc;" value="2">Click on 'User Management' in the administration menu.</li>
+                                                <li style="list-style-type: disc;" value="3">Select the all users, you want to delete from the user list. Click on the selection check box in the first columns of the table. You can also use the search line to filter the list.</li>
+                                            </ul>
+                                            <p>Now there are three options:</p>
+                                            <ol style="list-style-type: decimal;margin-left: 19pt;" start="1">
+                                                <li value="1">Click on the 'Delete' button on top of the user list view. All selected previously selected users will be deleted.</li>
+                                                <li value="2">Click on the 'Delete' button attached to the user line. Only this single user will be deleted</li>
+                                                <li value="3">Click on the 'Edit' button attached to the user. The 'Edit users' page will be opened. Click on the 'Delete user' button in the 'Delete user' section of this page. Only this single user will be deleted.</li>
+                                            </ol>
+                                            <p>The user will be removed from the user list.</p>
+                                            <p class="section">Example:</p>
+                                            <p>
+                                                <img src="../Resources/Images/B_UsersRightsRolesMgmt/UserManagement_DeleteUser_01_v1.png" />
+                                            </p>
+                                            <p class="grafik">UserManagement_DeleteUser_01_v1.png</p>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

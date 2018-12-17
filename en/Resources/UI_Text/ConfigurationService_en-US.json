@@ -1,0 +1,16 @@
+﻿{
+	"unknownUserException": "The user with [{0}] [{1}] does not exist.",
+	"unknownCustomerUserException": "The combination of user ID [{0}] and customer ID [{1}] does not exist.",
+	"corruptedUserException": "The user with [{0}] [{1}] is corrupted.",
+	"applicationUserExistsException": "The user with the specified customer ID [{0}] and email address [{1}] already exists in the database [{2}].",
+	"identityUserExistsException": "The user with the specified email address [{0}] already exists in the database [{1}].",
+	"createIdentityUserException": "The user with the specified email address [{0}] could not be created by the Access Manager. The Access Manager reported: [{1}].",
+	"verifyEmailConfirmationTokenException": "The email confirmation token [{0}] for user with e-mail address [{1}] is not valid.",
+	"customerExistsException": "The customer with the specified name [{0}] already exists in the database [{1}].",
+	"customerNameMinLengthException": "The minimum length of the customer's name [{0}] without any surrounding whitespaces should be at least 3 characters.",
+	"customerNotFoundException": "The customer with ID [{0}] could not be found.",
+	"userMismatchException": "User ID [{0}] does not match the ID [{1}] in user entity [{2}].",
+	"customerSubDomainNotAvailableException": "The sub domain [{0}] is not available.",
+	"languageResourceNotAvailableException": "The language resource identified by [{0}]: [{1}], [{2}]: [{3}], [{4}]: [{5}] is not available.",
+	"userUpdateFailed":  "Update of user [{0}] failed in authentication store, details:\n{1}"
+}

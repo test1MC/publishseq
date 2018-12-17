@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],u:['../A_GeneralOverview/CDH2_Display.html'],s:['+','french','set'],p:[['+',4],['attached',16],['customers',0],['erheben',48],['in',16],['minim',29],['phonein',31],['sit',40],['type',31]]});

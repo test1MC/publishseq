@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <script>
+			document.title=document.title + " - Customer Data Hub";
+			</script>
+        <!-- Matomo -->
+        <script type="text/javascript">
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setCookieDomain", "*.docu.cdh2.net"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="https://analytics.cdh2.net/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+        <noscript>
+            <p>
+                <img src="https://analytics.cdh2.net/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt="" />
+            </p>
+        </noscript>
+        <!-- End Matomo Code -->
+    </head>
+    <body>
+        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: PreviousTopic NextTopic Separator Print SelectBrowseSequence Separator SelectLanguage;" data-mc-skin="/Project/Skins/Topic Toolbar.flskn" class="body-container" />
+        <div class="topic-container">
+            <MadCap:breadcrumbsProxy style="font-size: 11pt;" />
+            <MadCap:bodyProxy />
+        </div>
+        <MadCap:miniTocProxy style="padding-left: 20px;padding-top: 10px;text-decoration: underline;color: #2285d0;mc-toc-depth: 1;" />
+    </body>
+</html>

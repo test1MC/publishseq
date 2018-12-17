@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="_Skins_CDH2_skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Relations</title>
+        <script>/* <![CDATA[ */
+			document.title=document.title + " - Customer Data Hub";
+			/* ]]> */</script>
+        <!-- Matomo -->
+        <script type="text/javascript">/* <![CDATA[ */
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setCookieDomain", "*.docu.cdh2.net"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="https://analytics.cdh2.net/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		/* ]]> */</script>
+        <noscript>
+            <p>
+                <img src="https://analytics.cdh2.net/piwik.php?idsite=2&amp;rec=1" style="border: 0;" alt="" />
+            </p>
+        </noscript>
+        <!-- End Matomo Code -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.select-language-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/select-language.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/StandardOnline.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.html" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxybody-container _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic Separator Print SelectBrowseSequence Separator SelectLanguage;">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                        </button>
+                                        <button class="button needs-pie next-topic-button" title="Navigate next">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie print-button" title="Print">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie select-language-button" title="Change language">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="topic-container">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <h2>Relations</h2>
+                                    <p>Relations show how entities are dependent of each other. An entity cannot only be related to another entity type, but also to another entity of the same kind. E.g. a person can obviously be related to an organization or a location. The corresponding relations can be "... is employee of ..." or "... is living at ..." for those cases. However, a person can also be related to another person, like with the "... is married to ..." relation.</p>
+                                    <p>For each entity a self defined set of relations is available with the CDH2's generic data model.</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />PERSON to all entities</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <table style="width: 80%;mc-table-style: url('../Resources/TableStyles/StandardOnline.css');" class="TableStyle-StandardOnline" cellspacing="0">
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-StandardOnline-Head-Header1">
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Entity</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Cardinality</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadD-Column1-Header1">
+                                                            <p>Relation</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">PERSON</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Child</li>
+                                                                <li value="4">Married</li>
+                                                                <li value="5">Partnership</li>
+                                                                <li value="6">Adoptee</li>
+                                                                <li value="7">Sibling</li>
+                                                                <li value="8">Beneficiary</li>
+                                                                <li value="9">Business Partner</li>
+                                                                <li value="10">Customer</li>
+                                                                <li value="11">Employee</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">ORGANIZATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Owner</li>
+                                                                <li value="4">Prospect</li>
+                                                                <li value="5">Customer</li>
+                                                                <li value="6">Membership</li>
+                                                                <li value="7">Service provider</li>
+                                                                <li value="8">Reseller</li>
+                                                                <li value="9">Supplier</li>
+                                                                <li value="10">Beneficiary</li>
+                                                                <li value="11">Employer</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">LOCATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Living address</li>
+                                                                <li value="4">Second home</li>
+                                                                <li value="5">Business address</li>
+                                                                <li value="6">Postal address</li>
+                                                                <li value="7">Delivery address</li>
+                                                                <li value="8">P.O.Box</li>
+                                                                <li value="9">Packstation</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">EMAIL</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Main contact</li>
+                                                                <li value="4">Secondary contact</li>
+                                                                <li value="5">Other contact</li>
+                                                                <li value="6">Newsletter registration</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">PHONE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Landline</li>
+                                                                <li value="4">Mobile</li>
+                                                                <li value="5">Pager</li>
+                                                                <li value="6">Fax</li>
+                                                                <li value="7">Private</li>
+                                                                <li value="8">Business</li>
+                                                                <li value="9">Mobile business</li>
+                                                                <li value="10">Fax business</li>
+                                                                <li value="11">Landline business</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">WEBSITE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Blog</li>
+                                                                <li value="4">Community</li>
+                                                                <li value="5">Forum</li>
+                                                                <li value="6">Social</li>
+                                                                <li value="7">Official Web site</li>
+                                                                <li value="8">Product Web site</li>
+                                                                <li value="9">Partner Web site</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p>META</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyA-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />ORGANIZATION to all entities</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <table style="width: 80%;mc-table-style: url('../Resources/TableStyles/StandardOnline.css');" class="TableStyle-StandardOnline" cellspacing="0">
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-StandardOnline-Head-Header1">
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Entity</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Cardinality</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadD-Column1-Header1">
+                                                            <p>Relation</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PERSON</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Owner</li>
+                                                                <li value="4">Prospect</li>
+                                                                <li value="5">Customer</li>
+                                                                <li value="6">Membership</li>
+                                                                <li value="7">Service provider</li>
+                                                                <li value="8">Reseller</li>
+                                                                <li value="9">Supplier</li>
+                                                                <li value="10">Beneficiary</li>
+                                                                <li value="11">Employer</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>ORGANIZATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Business partner</li>
+                                                                <li value="4">Customer</li>
+                                                                <li value="5">Membership</li>
+                                                                <li value="6">Division</li>
+                                                                <li value="7">Service provider</li>
+                                                                <li value="8">Reseller</li>
+                                                                <li value="9">Supplier</li>
+                                                                <li value="10">Beneficiary</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>LOCATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Postal address</li>
+                                                                <li value="4">Delivery address</li>
+                                                                <li value="5">P.O.Box</li>
+                                                                <li value="6">Packstation</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>EMAIL</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PHONE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>WEBSITE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p>META</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyA-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />LOCATION to all entities</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <table style="width: 80%;mc-table-style: url('../Resources/TableStyles/StandardOnline.css');" class="TableStyle-StandardOnline" cellspacing="0">
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-StandardOnline-Head-Header1">
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Entity</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Cardinality</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadD-Column1-Header1">
+                                                            <p>Relation</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PERSON</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Living address</li>
+                                                                <li value="4">Second home</li>
+                                                                <li value="5">Business address</li>
+                                                                <li value="6">Postal address</li>
+                                                                <li value="7">Delivery address</li>
+                                                                <li value="8">P.O.Box</li>
+                                                                <li value="9">Packstation</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>ORGANIZATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Postal address</li>
+                                                                <li value="4">Delivery address</li>
+                                                                <li value="5">P.O.Box</li>
+                                                                <li value="6">Packstation</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>LOCATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">is access via</li>
+                                                                <li value="4">Delivery Address</li>
+                                                                <li value="5">next to</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>EMAIL</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PHONE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>WEBSITE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p>META</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyA-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />EMAIL to all entities</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <table style="width: 80%;mc-table-style: url('../Resources/TableStyles/StandardOnline.css');" class="TableStyle-StandardOnline" cellspacing="0">
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-StandardOnline-Head-Header1">
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Entity</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Cardinality</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadD-Column1-Header1">
+                                                            <p>Relation</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PERSON</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Main contact</li>
+                                                                <li value="4">Secondary contact</li>
+                                                                <li value="5">Other contact</li>
+                                                                <li value="6">Newsletter registration</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>ORGANIZATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Main contact</li>
+                                                                <li value="4">Secondary contact</li>
+                                                                <li value="5">Other contact</li>
+                                                                <li value="6">General contact</li>
+                                                                <li value="7">Support contact</li>
+                                                                <li value="8">Sales contact</li>
+                                                                <li value="9">Customer contact</li>
+                                                                <li value="10">Partner contact</li>
+                                                                <li value="11">Newsletter</li>
+                                                                <li value="12">Newsletter registration</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>LOCATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>EMAIL</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PHONE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>WEBSITE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p>META</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyA-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />PHONE to all entities</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <table style="width: 80%;mc-table-style: url('../Resources/TableStyles/StandardOnline.css');" class="TableStyle-StandardOnline" cellspacing="0">
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-StandardOnline-Head-Header1">
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Entity</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Cardinality</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadD-Column1-Header1">
+                                                            <p>Relation</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PERSON</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Landline</li>
+                                                                <li value="4">Mobile</li>
+                                                                <li value="5">Pager</li>
+                                                                <li value="6">Fax</li>
+                                                                <li value="7">Private</li>
+                                                                <li value="8">Business</li>
+                                                                <li value="9">Mobile business</li>
+                                                                <li value="10">Fax business</li>
+                                                                <li value="11">Landline business</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>ORGANIZATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Landline</li>
+                                                                <li value="4">Mobile</li>
+                                                                <li value="5">Pager</li>
+                                                                <li value="6">Fax</li>
+                                                                <li value="7">Switchboard</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>LOCATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>EMAIL</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PHONE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>WEBSITE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p>META</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyA-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />WEBSITE to all entites</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <table style="width: 80%;mc-table-style: url('../Resources/TableStyles/StandardOnline.css');" class="TableStyle-StandardOnline" cellspacing="0">
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-StandardOnline-Head-Header1">
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Entity</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Cardinality</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadD-Column1-Header1">
+                                                            <p>Relation</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PERSON</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Blog</li>
+                                                                <li value="4">Community</li>
+                                                                <li value="5">Forum</li>
+                                                                <li value="6">Social</li>
+                                                                <li value="7">Official Web site</li>
+                                                                <li value="8">Product Web site</li>
+                                                                <li value="9">Partner Web site</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>ORGANIZATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                                <li value="3">Blog</li>
+                                                                <li value="4">Community</li>
+                                                                <li value="5">Forum</li>
+                                                                <li value="6">Social</li>
+                                                                <li value="7">Official Website</li>
+                                                                <li value="8">Product Website</li>
+                                                                <li value="9">Partner Website</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>LOCATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>EMAIL</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PHONE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>WEBSITE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p>META</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyA-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />META to all entities</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <table style="width: 80%;mc-table-style: url('../Resources/TableStyles/StandardOnline.css');" class="TableStyle-StandardOnline" cellspacing="0">
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <col class="TableStyle-StandardOnline-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-StandardOnline-Head-Header1">
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Entity</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadE-Column1-Header1">
+                                                            <p>Cardinality</p>
+                                                        </th>
+                                                        <th class="TableStyle-StandardOnline-HeadD-Column1-Header1">
+                                                            <p>Relation</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PERSON</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>ORGANIZATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>LOCATION</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>EMAIL</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p>PHONE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body2">
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p>WEBSITE</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyE-Column1-Body2">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyD-Column1-Body2">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-StandardOnline-Body-Body1">
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p>META</p>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyB-Column1-Body1">
+                                                            <p class="allTableCol">Possible values are:</p>
+                                                            <ul>
+                                                                <li value="1">1 : 1</li>
+                                                                <li value="2">1 : n</li>
+                                                                <li value="3">M : N</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="TableStyle-StandardOnline-BodyA-Column1-Body1">
+                                                            <ol>
+                                                                <li value="1">Empty (no relation display name)</li>
+                                                                <li value="2">Connection</li>
+                                                            </ol>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

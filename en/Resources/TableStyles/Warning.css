@@ -1,0 +1,348 @@
+/* MadCap Table Style: */
+
+/*<meta Version="9" />*/
+
+mcTableStyle
+{
+	name: Warning;
+	border-collapse: collapse;
+	border-left-style: none;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-width: 1px;
+	max-id: 3;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: none;
+	separator-width: 1px;
+	name: Column1;
+	id: 0;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	separator-style: none;
+	separator-width: 1px;
+	name: Body1;
+	id: 1;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-Warning
+{
+	border-collapse: collapse;
+	border-left-style: none;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-top-width: 1px;
+	border-bottom-style: none;
+	border-bottom-width: 1px;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-Warning-Column-Column1
+{
+	
+}
+
+.TableStyle-Warning-HeadI-Column1-
+{
+	
+}
+
+.TableStyle-Warning-HeadI-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadE-Column1-
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-HeadE-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadF-Column1-
+{
+	
+}
+
+.TableStyle-Warning-HeadF-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadH-Column1-
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-HeadH-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadD-Column1-
+{
+	
+}
+
+.TableStyle-Warning-HeadD-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadC-Column1-
+{
+	
+}
+
+.TableStyle-Warning-HeadC-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadB-Column1-
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-HeadB-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadA-Column1-
+{
+	
+}
+
+.TableStyle-Warning-HeadA-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-HeadG-Column1-
+{
+	
+}
+
+.TableStyle-Warning-HeadG-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootI-Column1-
+{
+	
+}
+
+.TableStyle-Warning-FootI-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootE-Column1-
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-FootE-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootF-Column1-
+{
+	
+}
+
+.TableStyle-Warning-FootF-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootH-Column1-
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-FootH-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootD-Column1-
+{
+	
+}
+
+.TableStyle-Warning-FootD-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootC-Column1-
+{
+	
+}
+
+.TableStyle-Warning-FootC-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootB-Column1-
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-FootB-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootA-Column1-
+{
+	
+}
+
+.TableStyle-Warning-FootA-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-FootG-Column1-
+{
+	
+}
+
+.TableStyle-Warning-FootG-Column1- p
+{
+	
+}
+
+.TableStyle-Warning-Body-Body1
+{
+	
+}
+
+.TableStyle-Warning-BodyI-Column1-Body1
+{
+	
+}
+
+.TableStyle-Warning-BodyI-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyE-Column1-Body1
+{
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-BodyE-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyF-Column1-Body1
+{
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+}
+
+.TableStyle-Warning-BodyF-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyH-Column1-Body1
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-BodyH-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyD-Column1-Body1
+{
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+}
+
+.TableStyle-Warning-BodyD-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyC-Column1-Body1
+{
+	
+}
+
+.TableStyle-Warning-BodyC-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyB-Column1-Body1
+{
+	border-right-width: 1px;
+	border-right-style: none;
+}
+
+.TableStyle-Warning-BodyB-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyA-Column1-Body1
+{
+	
+}
+
+.TableStyle-Warning-BodyA-Column1-Body1 p
+{
+	
+}
+
+.TableStyle-Warning-BodyG-Column1-Body1
+{
+	
+}
+
+.TableStyle-Warning-BodyG-Column1-Body1 p
+{
+	
+}
+
+

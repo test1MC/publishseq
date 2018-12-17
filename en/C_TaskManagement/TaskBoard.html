@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="_Skins_CDH2_skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Task Board</title>
+        <script>/* <![CDATA[ */
+			document.title=document.title + " - Customer Data Hub";
+			/* ]]> */</script>
+        <!-- Matomo -->
+        <script type="text/javascript">/* <![CDATA[ */
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setCookieDomain", "*.docu.cdh2.net"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="https://analytics.cdh2.net/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		/* ]]> */</script>
+        <noscript>
+            <p>
+                <img src="https://analytics.cdh2.net/piwik.php?idsite=2&amp;rec=1" style="border: 0;" alt="" />
+            </p>
+        </noscript>
+        <!-- End Matomo Code -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.select-language-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/select-language.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/EinzugE5.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.html" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxybody-container _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic Separator Print SelectBrowseSequence Separator SelectLanguage;">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                        </button>
+                                        <button class="button needs-pie next-topic-button" title="Navigate next">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie print-button" title="Print">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie select-language-button" title="Change language">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="topic-container">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <h2>Task Board</h2>
+                                    <p>The tiles that are displayed on the main view of the task board, contain a brief overview over all upcoming tasks. The tasks were gathered after their respective task types.</p>
+                                    <p>Click on a tile to get more detailed information about all upcoming tasks. The detailed view is displayed next to the tiles in the CDH2 main pane. Its header section contains all information shared by all tasks of the respective task type, like 'Assignees', 'Due date', 'Priority', etc. The section underneath the header displays a list with all records within that task related to a certain assignee.</p>
+                                    <p>The tasks can be filtered by the drop-down fields in the header to get smaller portions of the list reflecting special perspectives or purposes.</p>
+                                    <p>The available filter options are:</p>
+                                    <ul>
+                                        <li value="1">Assignees</li>
+                                        <li value="2">Due date (Tasks according their due date)</li>
+                                        <li value="3">Priority (Very high, High, Normal, Low, Very low)</li>
+                                        <li value="4">MyTasks (tasks that are assigned to you)</li>
+                                        <li value="5">MyTeamTasks (tasks that are assigned to your team)</li>
+                                        <li value="6">All tasks of a certain type (User defined tasks as well as automatically generated tasks like: [RAW, VAL, MATCH, MERGE, ReVAL, ])</li>
+                                    </ul>
+                                    <p>Each line of the list, task lines as well as record lines, are equipped with a 'Review' button. Click on that button to switch into the detailed task view or the respective record view.</p>
+                                    <p>
+                                        <img src="../Resources/Images/C_TaskManagement/TaskManagement-TaskBoard_01.png" />
+                                    </p>
+                                    <p class="section" data-mc-conditions="DraftStages.NeedToVerify">Functions:</p>
+                                    <p data-mc-conditions="DraftStages.NeedToVerify">Task report overview:</p>
+                                    <ul>
+                                        <li value="1" data-mc-conditions="DraftStages.NeedToVerify">Which user is assigned to which task?</li>
+                                        <li value="2" data-mc-conditions="DraftStages.NeedToVerify">Task export/import Functions (for Excel, CSV).</li>
+                                    </ul>
+                                    <p data-mc-conditions="DraftStages.NeedToVerify">Cases to be considered:</p>
+                                    <ul>
+                                        <li value="1" data-mc-conditions="DraftStages.NeedToVerify">Conflict free access (parallel editing). E. g. two users working on the same task.</li>
+                                        <li value="2" data-mc-conditions="DraftStages.NeedToVerify">A record had has been modified by one user via API, while another user was working on it. I. e. it must not be stored again.</li>
+                                    </ul>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to create a new task</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Creating a new task always means to create tasks manually without being necessarily caused by an error in the validation, matching or merging phase.</p>
+                                            <p>Fill in the required input fields. Input fields marked with '*' are mandatory fields. Once you created a new task, it will be displayed in the task overview.</p>
+                                            <ul>
+                                                <li value="1">Click on 'Create task' to confirm your entries and to create a new task.</li>
+                                                <li value="2">Click 'Cancel' to abort.</li>
+                                            </ul>
+                                            <p class="section">Example:</p>
+                                            <p>
+                                                <img src="../Resources/Images/C_TaskManagement/TaskManagement-createTask_01.png" />
+                                            </p>
+                                            <p>The following input fields are available:</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Name:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Your name. After a news task is created you will find your name in the field 'Reporter'.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Description:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Short description of the issue.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Record:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>ID of the record that caused the issue.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Due date:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Due date of the deadline for resolving the task. This is a drop-down field. You can select the date from a calendar.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Priority:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Priority for accomplishing a task. The available levels are: Very high, high, low and very low. Default level is 'normal'.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Assignees:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that is responsible for accomplishing the task.</p>
+                                                            <p> Select a name from the drop-down field. 'Unassigned' is always predefined (Default setting).</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Check for duplicate record:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>A record that didn't pass the validation procedure can be checked for duplicates anyway. This check box is inactive as long as no record was selected that matches this criterion. Set a check mark into the check box for running a matching process.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Potential duplicate:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to edit multiple tasks</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p class="section">Example:</p>
+                                            <p>
+                                                <img src="../Resources/Images/C_TaskManagement/TaskManagement-editTask_01_500x561.png" style="width: 500;height: 561;" />
+                                            </p>
+                                            <p>The following input fields are available:</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Type:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Subject:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Linked Object:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Assignee:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Creator /&#160;Owner:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Description:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Due date:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Due date of the deadline for resolving the task. This is a drop-down field. You can change the date by choosing another one from the calendar.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Note / Comment:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Priority:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />How to create a new task (bulk)</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Creating a new task always means to create tasks manually without being necessarily caused by an error in the validation, matching or merging phase.</p>
+                                            <p>Creating multiple new tasks always means to create tasks manually for a larger set of records. This can be necessary in case that the same issue occurs in a bulk of records.</p>
+                                            <p>Fill in the required input fields. Input fields marked with '*' are mandatory fields. Once you created a new task, it will be displayed in the task overview.</p>
+                                            <ul>
+                                                <li value="1">Click on 'Create task' to confirm your entries and to create a new task.</li>
+                                                <li value="2">Click 'Cancel' to abort.</li>
+                                            </ul>
+                                            <p class="section">Example:</p>
+                                            <p>
+                                                <img src="../Resources/Images/C_TaskManagement/TaskManagement-createTask_02.png" />
+                                            </p>
+                                            <p>The following input fields are available:</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Name:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Your name. After a news task is created you will find your name in the field 'Reporter'.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Description:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Short description of the issue.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Record:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>IDs of the records that caused the issue.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Due date:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Due date of the deadline for resolving the task. This is a drop-down field. You can select the date from a calendar.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Priority:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>You can define a priority level for the new task. The following priority levels are available: Very high, High, Normal, Low, and Very low. Select one from the drop-down field. Normal is always predefined (Default setting).</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Assignees:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Assign the new task to a person that is in charge to deal with it. Select a name from the drop-down field. 'Unassigned' is always predefined (Default setting).</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Task post processing - How to review a problem</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>The task view provides several functions for the post processing procedure. Details are described in the "Task overview" section.</p>
+                                            <p>Underneath the header section with the current task settings the record view is displayed. It provides a content view on the data level of the record.</p>
+                                            <p>In some cases the collapsed task views of different tasks that are related to the displayed record.</p>
+                                            <ul>
+                                                <li value="1">Click on the 'Expand' button to open the respective task view. You can fix all issues on that record by accomplishing all related tasks.</li>
+                                                <li value="2">Click on the 'Record action' button underneath the record ID to open the 'data' view of the record and to fix the problem.</li>
+                                                <li value="3">Click on 'Delete task' for deletion</li>
+                                                <li value="4">Click on 'Mark as resolved' to resolve the task for further processing, after you fixed the issues within the data of that record.</li>
+                                            </ul>
+                                            <p>
+                                                <img src="../Resources/Images/C_TaskManagement/TaskManagement-RecordMultipleTask_01.png" />
+                                            </p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Due date:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date, by which the task has to be accomplished. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Status:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Status of processing progress of the task, resp. the stage of completion of the task. Possible status designations will be open or resolved.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Priority:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Priority for accomplishing a task. The available levels are: Very high, high, low and very low. Default level is 'normal'.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Assignee:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that is responsible for accomplishing the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Type:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Category to which the task belongs. Possible types of tasks are: Validation tasks, matching tasks, merge tasks and manual tasks.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reporter:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that reported the cause of the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reported at:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date when the event that caused the task was reported. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Records:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Record ID(s) of the record(s) that is (are) related to the displayed task.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Task post processing - How to use the validation assistant</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>The task view provides several functions for the post processing workflow. Details are described in the "Task overview" section.</p>
+                                            <p>&#160;</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Due date:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date, by which the task has to be accomplished. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Status:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Status of processing progress of the task, resp. the stage of completion of the task. Possible status designations will be open or resolved.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Priority:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Priority for accomplishing a task. The available levels are: Very high, high, low and very low. Default level is 'normal'.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Assignee:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that is responsible for accomplishing the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Type:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Category to which the task belongs. Possible types of tasks are: Validation tasks, matching tasks, merge tasks and manual tasks.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reporter:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that reported the cause of the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reported at:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date when the event that caused the task was reported. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Records:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Record ID(s) of the record(s) that is (are) related to the displayed task.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Task post processing - How to use the match assistant</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>The task view provides several functions for the post processing workflow. Details are described in the "Task overview" section.</p>
+                                            <p>&#160;</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Due date:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date, by which the task has to be accomplished. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Status:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Status of processing progress of the task, resp. the stage of completion of the task. Possible status designations will be open or resolved.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Priority:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Priority for accomplishing a task. The available levels are: Very high, high, low and very low. Default level is 'normal'.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Assignee:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that is responsible for accomplishing the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Type:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Category to which the task belongs. Possible types of tasks are: Validation tasks, matching tasks, merge tasks and manual tasks.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reporter:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that reported the cause of the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reported at:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date when the event that caused the task was reported. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Records:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Record ID(s) of the record(s) that is (are) related to the displayed task.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Task post processing - How to use the merge assistant</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>The task view provides several functions for the post processing workflow. Details are described in the "Task overview" section.</p>
+                                            <p>Underneath the header section with the current task settings the record view is displayed. It provides several columns with a content view on record level of all records that are supposed be merged or kept separated.</p>
+                                            <ul>
+                                                <li value="1">Click on the 'Keep separate' button underneath the 'Merge assistant' header, if you don't want to merge the displayed records.</li>
+                                                <li value="2">Click on the 'Merge' button to merge the displayed records.</li>
+                                                <li value="3">Click on 'Delete task' for deletion</li>
+                                                <li value="4">Click on 'Mark as resolved' to resolve the task for further processing, after you fixed the issues within the data of that record.</li>
+                                            </ul>
+                                            <p>
+                                                <img src="../Resources/Images/C_TaskManagement/TaskManagement-RecordSingleTask_01.png" />
+                                            </p>
+                                            <p>&#160;</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 50mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Due date:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date, by which the task has to be accomplished. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Status:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Status of processing progress of the task, resp. the stage of completion of the task. Possible status designations will be open or resolved.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Priority:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Priority for accomplishing a task. The available levels are: Very high, high, low and very low. Default level is 'normal'.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Assignee:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that is responsible for accomplishing the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Type:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Category to which the task belongs. Possible types of tasks are: Validation tasks, matching tasks, merge tasks and manual tasks.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reporter:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Name of the person that reported the cause of the task.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>Reported at:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Date when the event that caused the task was reported. The format of the entry can be defined by the user.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>Records:</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Record ID(s) of the record(s) that is (are) related to the displayed task.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

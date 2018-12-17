@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <!-- Matomo -->
+        <script type="text/javascript">
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setCookieDomain", "*.docu.cdh2.net"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="https://analytics.cdh2.net/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+        <noscript>
+            <p>
+                <img src="https://analytics.cdh2.net/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt="" />
+            </p>
+        </noscript>
+        <!-- End Matomo Code -->
+    </head>
+    <body>
+        <MadCap:bodyProxy />
+        <div class="home-footer">
+            <table style="width: 100%;">
+                <col style="width: 411px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <p class="footer"><span class="footerMainPage">Uniserv Gmbh</span> </p>
+                            <p class="footer"><span class="footerMainPage">Rastatter Str. 13</span>
+                            </p>
+                            <p class="footer"><span class="footerMainPage">75179 Pforzheim</span>
+                            </p>
+                            <p class="footer"><span class="footerMainPage">info@uniserv.com</span>
+                            </p>
+                        </td>
+                        <td style="text-align: right;vertical-align: top;">
+                            <p class="footer"><span class="footerMainPage">Head Office: Pforzheim</span>
+                            </p>
+                            <p class="footer"><span class="footerMainPage">County court: Mannheim HRB 501535</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

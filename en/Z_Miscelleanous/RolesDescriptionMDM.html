@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="_Skins_CDH2_skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Roles in Master Data Management</title>
+        <script>/* <![CDATA[ */
+			document.title=document.title + " - Customer Data Hub";
+			/* ]]> */</script>
+        <!-- Matomo -->
+        <script type="text/javascript">/* <![CDATA[ */
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setCookieDomain", "*.docu.cdh2.net"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="https://analytics.cdh2.net/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		/* ]]> */</script>
+        <noscript>
+            <p>
+                <img src="https://analytics.cdh2.net/piwik.php?idsite=2&amp;rec=1" style="border: 0;" alt="" />
+            </p>
+        </noscript>
+        <!-- End Matomo Code -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.select-language-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/select-language.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.html" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxybody-container _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic Separator Print SelectBrowseSequence Separator SelectLanguage;">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                        </button>
+                                        <button class="button needs-pie next-topic-button" title="Navigate next">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie print-button" title="Print">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie select-language-button" title="Change language">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="topic-container">
+                                    <h1>Roles in Master Data Management</h1>
+                                    <h2>Business Solution Architect</h2>
+                                    <p>Business Solution Architects have to compile the identified data and preparing it for analysis. The data is structured for the expected queries in a way that it is always refreshed every minute, even when queries are made.</p>
+                                    <p>Titles such as System Analyst, Requirements Engineer, Requirements Manager, Process Analyst, Product Manager, Enterprise Analyst, Organizational Analyst, IT Organizer, Business Architect or Internal Consultant designate similar to identical roles for the Business Analyst.</p>
+                                    <h2>Chief Data Officer (CDO)</h2>
+                                    <p>A driver of digital change must be established at the C-level of a company in digital transformation: The Chief Data Officer.</p>
+                                    <p>The Chief Data Officer is the company's true converter in digitizing information management.</p>
+                                    <p>The Chief Data Officer has played an outstanding role when he can abolish it in the digitized company. He will then often be appointed as the new CEO.</p>
+                                    <p>The Chief Data Officer (CDO) has the responsibility to initiate and drive digital transformation through the digitization of information management.</p>
+                                    <p>The Chief Data Officer develops the vision and is responsible for the strategy of data management, in particular of data as an asset.</p>
+                                    <p>The Chief Data Officer belongs to the C level, brings data into the focus of the C level, establishes data metrics and reports accordingly to his colleagues at the C level.</p>
+                                    <p>The Chief Data Officer coordinates the enterprise information management (EIM) across the entire organization, establishes standards and rules for the EIM and defines its organization (knowing where which data is, where it comes from and where it is used).</p>
+                                    <p>As part of his role, the Chief Data Officer (CDO) is responsible for managing the Data Scientists and Data Stewards as well as the external Data Service Providers.</p>
+                                    <p>The CDO acts as a purchaser to data service providers who provide external data, such as demographical, sociographical, photographical, geographical or statistical data.</p>
+                                    <p>The CDO is responsible for providing reliable and high quality data to the entire company as well as to the respective departments.</p>
+                                    <h2>Data Exporer</h2>
+                                    <p>The preparation of the data is controlled by Data-Explorers. This is necessary for the project because most data has never been generated to be examined analytically. Therefore they are too unsuitable, too poorly stored and too poorly organized for analysis without prior preparation.</p>
+                                    <p>Campaign Experts and Data Explorers need expertise such as that of Cognitive Scientists and Behavioral Economists. This expertise is necessary to identify the data that is or is not important for a project. It is also important in interpreting the results.</p>
+                                    <p>Campaign Experts interpret the results and translate them into corresponding actions. They prioritize channels and define campaign sequences.</p>
+                                    <p>Data Explorers search the Big Data universe to find and prepare the data needed in the project.</p>
+                                    <h2>Data Service Provider</h2>
+                                    <p>Data service providers provide external data like demographical, sociographical, firmographical, geographical, statistical or other data. The CDO acts as a purchaser to provide such reliable and high quality data to the company as a whole and to the departments.</p>
+                                    <p>As part of his role, the Chief Data Officer (CDO) is responsible for managing the Data Scientists and Data Stewards as well as the external Data Service Providers.</p>
+                                    <p>Smart Customer Data are the source of innovation (new services and products for the customer) and create competitive advantages.</p>
+                                    <h2>Data Steward</h2>
+                                    <p>Successful and efficient data stewards are at the heart of the business, visible, respected and influential. They understand the importance of data quality for all comprehensive business processes as well as its influence on all downstream processes.</p>
+                                    <p>Data Stewards ensure that information governance is observed and implemented by everyone in the company in all activities.</p>
+                                    <p>Data stewards should take a leading role in the development of data definitions and support data profiling to detect data errors.</p>
+                                    <p>The tasks of information management and quality assurance of data (data quality) in a company are increasingly performed by data stewards.</p>
+                                    <p>Data Stewards should focus on customer data used by sales and marketing processes on which a company has a current focus.</p>
+                                    <p>Problems with poor data quality are often not seen in specialist departments because the data, although generated there, are mainly used elsewhere.</p>
+                                    <p>Data Stewards can provide transparency and show which problems the entire company is facing due to poor data quality and how to support the relevant department in terms of data quality.</p>
+                                    <p>A team of specialist departments and IT begins formalizing data definitions, information management processes and usage rules, controlled by a data steward.</p>
+                                    <p>Data stewards should be good communicators, negotiators and mediators. New employees should not be seconded, as they do not know the informal structures and information channels.</p>
+                                    <p>Data stewards also have their role to play in big data initiatives, namely that of data hygienists.
+</p>
+                                    <p>The objective of Data Stewards is to provide the specialist departments with high-quality data that is easily accessible and with the required consistency.</p>
+                                    <p>In Big Data Analytics projects, Data Stewards play the role of SWAT teams, i.e. tactically acting special teams. They don't have the strategic role like in the company.</p>
+                                    <p>Data Stewards are responsible for continuously aligning information governance with corporate strategy.</p>
+                                    <p>Data stewards may act as service providers for Big Data initiatives, who are summoned by the Data Scientists but do not act independently.</p>
+                                    <p>Data Stewards are responsible for the company data and data of the specialist departments. The task of Data Stewards is the information management of company data and/or data from specialist departments within the framework of information governance.</p>
+                                    <h2>Digital Customer</h2>
+                                    <p>A digital customer can be defined by his digital networking and communication.</p>
+                                    <p>He lives in his world of experience and communicates at eye level through dialogue and interaction.</p>
+                                    <p>He cultivates his social relationships.</p>
+                                    <p>He values authenticity, transparency and loyalty.</p>
+                                    <p>He develops his own dynamic and prefers simple content production.</p>
+                                    <p>He uses a variety of digital platforms (not just Facebook) and naturally leaves his mark on the digital world.</p>
+                                    <p>Finding, interpreting and using the information traces of the customer in Big Data is therefore one of the main concerns of digital companies, because this is the only way to manage the world of experience of the customer.</p>
+                                    <p>By analyzing the information traces in Big Data, you can follow digital customers and track all traces in the digital world.</p>
+                                    <p>This makes Predictive Analytics one of the key challenges for digital companies that see digital customer experience management as a critical success factor.</p>
+                                    <p>It has always been a matter of delivering the right product with the right invoice to the right place at the right time and in the right quantity to the right customer promptly.</p>
+                                    <p>Customers want the data on offers and prices to get the lowest-cost products and services.</p>
+                                    <p>Precdictive Analytics is designed to discover and analyze digital customer traces in big data across all channels and contact points to predict future customer behavior and characteristics.</p>
+                                    <p>Analytics turns data into the necessary knowledge that brings transparent customers to companies and the transparent market to customers.</p>
+                                    <h2>Digital Enterprise</h2>
+                                    <p>Enterprises must learn what leadership means in a world of self-service analytics.</p>
+                                    <p>Enterprises lure with ever new customer experiences and want data as a reward.</p>
+                                    <p>From a traditional enterprise, a digital enterprise emerges through digital transformation.</p>
+                                    <p>A digital company is created by digital transformation within the company.</p>
+                                    <p>In concrete terms, digital transformation means that information technology no longer has only the function of support processes, but serves the innovation of the business model and business processes.</p>
+                                    <p>Digital business models and digital processes mean new sources of revenue and disruptive competitive advantages</p>
+                                    <p>The second essential characteristic of a digital company is that it masters digital communication.</p>
+                                    <p>A digital company is also characterized by industrialization, agility, compliance and smart behavior.</p>
+                                    <p>Predictive analytics is therefore one of the key challenges for digital companies that regard customer experience management as a critical success factor.</p>
+                                    <p>Business intelligence approaches such as the isolation of data in a company or the neutralization of all processes have become obsolete.</p>
+                                    <p>Filtering, interpreting and using customer-related data from big data is therefore one of the main concerns of digitally oriented companies, because this is the only way they have a chance to manage the customer's world of experience.</p>
+                                    <p>Digital companies can derive Smart Customer Data from the digital traces of customers and thus intervene purposefully in this customer experience world.</p>
+                                    <p>Today, customers and companies meet in the digital world.</p>
+                                    <p>A new currency applies here: data.</p>
+                                    <p>Location Intelligence opens up new perspectives, especially for consumer goods manufacturers and retailers. From "electronic commerce" to "mobile commerce". But this will only be successful if the customer data is really smart.</p>
+                                    <h2>Digital Scientist</h2>
+                                    <p>Data Scientists organize the data and build analytical models as part of the project. They review, modify and replace models when necessary. They also communicate the results of the analyses.</p>
+                                    <p>Data Scientists are based in Business Intelligence. They have technical expertise, problem awareness, communication skills and creativity.</p>
+                                    <p>Data scientists are responsible for the methodology of Big Data Analytics and the communication of analytical results to the board and the company as a whole.</p>
+                                    <p>Data stewards may act as a service provider for Big Data initiatives, called by Data scientists, but do not act independently.</p>
+                                    <p>Data scientists have the task of transforming Big Data into "Big Value".</p>
+                                    <p>The job of a Data Scientist is to generate information from large amounts of data and to derive recommendations for action that enable a company to work more efficiently.</p>
+                                    <p>The Data Scientist uses innovative analysis tools and develops queries that distill valuable information from confusing amounts of data.</p>
+                                    <p>The Data Scientist derives hypotheses from a data analysis that are statistically verified and prepared as a basis for management decisions.</p>
+                                    <p>As part of his role, the Chief Data Officer (CDO) is responsible for the Data Scientists and Data Stewards as well as for the management of the Data Service Providers.</p>
+                                    <h2>IT Security Manager</h2>
+                                    <p>The IT Security Manager is responsible for the proper running of company networks and server systems as well as for the security of data.</p>
+                                    <p>The IT security manager has comprehensive know-how in the field of IT security. He can plan, audit or set up a corporate information security management system (ISMS). He is able to define control objectives and control processes, implement security measures and monitor their effectiveness.</p>
+                                    <p>The professional qualification of the IT security manager consists above all in the thorough knowledge of data protection and data security, user and rights management as well as legal knowledge in the field of IT and computer law. In addition, there is a sound knowledge of programming languages, database systems, operating systems, hardware and software as well as network infrastructures.</p>
+                                    <p>His individual abilities are characterized by perseverance, safety awareness, curiosity, concentration, creativity, logical thinking as well as goal and solution orientation. He works systematically and thinks in superordinate contexts.</p>
+                                    <p>He is communicative, can express himself well, is capable of conflict and teamwork, has empathy and is characterised by systematic and analytical working methods.</p>
+                                    <h2>System administrator</h2>
+                                    <p>System administrators control company-wide IT, advise on the purchase of hardware and software, and support IT systems and networks by installing, uninstalling, and maintaining components.</p>
+                                    <p>As administrators, system administrators are often responsible for user administration, data protection, and data security. They are also responsible for user-oriented programming and customizing software for specific tasks and requirements.
+
+Translated with www.DeepL.com/Translator</p>
+                                    <p>The technical qualification of the system administrator consists above all in the thorough knowledge of network infrastructures, programming languages, operating and database systems, a sound knowledge of workflows, business and production processes, as well as a sound knowledge of data structures and algorithms. </p>
+                                    <p>In particular, system administrators have in-depth knowledge of service processes, service levels and service design (ITILv3 certified). Their individual skills are characterized by perseverance, quality awareness, service orientation, concentration, accuracy, logical thinking, high organizational skills and the ability to recognize overarching relationships.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

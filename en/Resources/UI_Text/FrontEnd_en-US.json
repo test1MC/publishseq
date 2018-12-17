@@ -1,0 +1,265 @@
+﻿	{
+			"header": {
+			"appName": "Customer Data Hub 2",
+			"myProfile": "My profile",
+			"signOut": "Logout",
+			"searchPlaceholder": "Type to search",
+			"adminMenuItem": "Administration"
+			},
+			"navBar": {
+			"dashboard": "Dashboard",
+			"pipelines": "Pipelines",
+			"transformation": "Transformation",
+			"echarts": "Echarts",
+			"administration": "Administration",
+			"help": "Help  Info"
+			},
+			"adminMenu": {
+			"administrationPage": "Administration page",
+			"dataSources": "Data sources",
+			"userManagement": "User management",
+			"dataModel": "Data model",
+			"manuals": "Manuals & API documentation"
+			},
+			"help": {
+			"header": "Info & Help",
+			"selectTopic": "Select a topic of interest",
+			"note": "You will be redirected to our Help & Documentation Service",
+			"generalProdOverview": "General Product Overview",
+			"taskManagement": "Task management",
+			"searchingFindingData": "Searching & finding data",
+			"modifyingData": "Modifying data",
+			"addingData": "Adding data",
+			"myUserProfile": "My User Profile",
+			"systemRequirements": "System requirements",
+			"rightsAndRoles": "Rights & Roles",
+			"general": "General",
+			"howTo": "HowTo",
+			"info": "Info"
+			},
+			"manuals": {
+			"header": "Manuals & API documentation",
+			"generalProdOverview": "General product overview",
+			"rightsAndRoles": "Users, Rights & Roles management",
+			"dataModelConfig": "Data model configuration",
+			"dataSourceConfig": "Data source configuration",
+			"dataTransformConfig": "Data transformation configuration",
+			"dataMatchConfig": "Data match configuration",
+			"dataIntegrationApi": "Data integration API (REST API)",
+			"general": "General",
+			"adminConfig": "Administration/Configuration",
+			"apiDocumentation": "API documentation"
+			},
+			"dataModel": {
+			"header": "Data model",
+			"entities": {
+			"header": "Entities",
+			"saveButton": "Save",
+			"cancelButton": "Cancel",
+			"table": {
+			"available": "Available",
+			"entityName": "Entity name",
+			"selectedFields": "Selected Fields",
+			"relations": "Relations",
+			"action": "Action"
+			}
+			},
+			"editEntity": {
+			"header": "Edit entity {{entityName}}",
+			"fieldsHeader": "Fields",
+			"languagePickerLabel": "Display names in",
+			"fieldsTable": {
+			"displayName": "Display name",
+			"fieldName": "Field name",
+			"type": "Type",
+			"allowNull": "Allow NULL",
+			"replaceNull": "Replace NULL",
+			"allowEmpty": "Allow empty",
+			"replaceEmpty": "Replace empty",
+			"action": "Action",
+			"noDataText": "There are no fields."
+			},
+			"backButton": "Return to entity overview"
+			},
+			"relations": {
+			"available": "Available",
+			"relation": "Relation",
+			"relations": "Relations",
+			"relatedEntity": "Related Entity",
+			"invertedRelation": "Inverted Relation",
+			"cardinality": "Cardinality",
+			"origin": "Origin",
+			"systemDefined": "System defined",
+			"selfDefined": "Self defined",
+			"noRelationsData": "There are no relations."
+			},
+			"enumerations": {
+			"header": "Enumerations",
+			"systemDefined": "System defined",
+			"selfDefined": "Self defined",
+			"table": {
+			"name": "Enumerations name",
+			"origin": "Origin",
+			"valueCount": "Value count",
+			"usedBy": "Used by entities",
+			"action": "Action"
+			}
+			},
+			"editEnumeration": {
+			"header": "Edit enumeration \"{{enumerationName}}\"",
+			"languagePickerLabel": "Display names in",
+			"usedBy": "Used by entities",
+			"origin": "Origin",
+			"systemDefined": "System defined",
+			"selfDefined": "Self defined",
+			"values": "Values",
+			"backButton": "Return to enumerations overview",
+			"table": {
+			"id": "ID",
+			"value": "Value",
+			"displayName": "Display name"
+			}
+			}
+			},
+			"dataSources": {
+			"header": "Data sources",
+			"createNewButton": "Create new source",
+			"description1": "Manage your Data Sources. Set individual transformation rules for each source .",
+			"description2": "Each time a data set is imported the MAP-IN transformation profile is applied.",
+			"description3": "When accessing data via API or exporting, the recipient transformation profile can be used to obtain the same output or input format.",
+			"table": {
+			"name": "Name",
+			"status": "Status",
+			"transformationProfiles": "Transformation Profiles",
+			"recordsOfThisSource": "Records of this source",
+			"action": "Action"
+			},
+			"noDataSources": "There are no data sources.",
+			"addPage": {
+			"header": "Add new data source",
+			"text": "Configure a new data source and select transformation profiles.",
+			"sourceName": "Source Name",
+			"sourceNamePlaceholder": "Enter a Source Name",
+			"sourceNameInfo": "Logical identifier used in the data model to identify the root of a record.",
+			"sourceDescription": "Source Description",
+			"sourceDescriptionPlaceholder": "Long description of the source and the data stored therein.",
+			"sourceDescriptionInfo": "Long description of the source and the data stored therein.",
+			"sourceEnabled": "Source enabled",
+			"sourceEnabledInfo": "As long as it is disabled, this source cannot be used to store or receive data with this data source configuration. Disabling does NOT delete any data.",
+			"addSourceButton": "Add source",
+			"cancelButton": "Cancel"
+			},
+			"validationMessages": {
+			"nameAlphanumeric": "Name needs to be alphanumeric",
+			"nameTooShort": "Name is too short (minimum is 3 characters)",
+			"descriptionAlphanumeric": "Description needs to be alphanumeric"
+			}
+			},
+			"confirmation": {
+			"yesButton": "Yes",
+			"noButton": "No"
+			},
+			"serverErrors": {
+			"saveFailed": "Saving failed",
+			"unexpectedError": "An unexpected error occured"
+			},
+			"userManagement": {
+			"header": "User management",
+			"addUserButton": "Add user",
+			"saveButton": "Save",
+			"importUsersButton": "Import users",
+			"exportButton": "Export",
+			"deleteButton": "Delete",
+			"deactivateButton": "Deactivate",
+			"showingItemsText": "Showing items",
+			"ofText": "of",
+			"youSelectedText": " - You selected",
+			"youSelectedAllText": "- You selected all",
+			"onThisPageText": "on this page",
+			"selectAllText": "Select all",
+			"itemText": "item",
+			"itemsText": "items",
+			"cancelSelection": "Cancel selection",
+			"deleteUser": "Delete user",
+			"deleteUserText": "Do you really want to delete this user?",
+			"accountActive": "Account active",
+			"accountExpires": "Account expires",
+			"expirationDate": "Expiration date",
+			"expirationDatePlaceholder": "Date",
+			"table": {
+			"fullName": "Full name",
+			"email": "Email",
+			"creationDate": "Creation date",
+			"lastAccess": "Last access",
+			"status": "Status",
+			"action": "Action"
+			},
+			"addPage": {
+			"header": "Add user",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"languageAndCountry": "Language & country",
+			"timeZone": "Time zone",
+			"loginOrEmail": "Login / Email",
+			"loginOrEmailPlaceholder": "Enter your email",
+			"roles": "Roles",
+			"teams": "Teams",
+			"bottomText": "User will get an email notifcation and a request to set his account password.",
+			"cancelButton": "Cancel"
+			},
+			"editPage": {
+			"header": "Edit user",
+			"bottomText": "Please note! User will not be informed about any changes.",
+			"revertChangesButton": "Undo changes",
+			"deleteUser": "Delete user",
+			"deleteUserButton": "Delete user",
+			"deleteUserText": "Do you really want to delete this user?"
+			},
+			"validationMessages": {
+			"firstName": "First name must not be blank",
+			"lastName": "Last name must not be blank",
+			"languageAndCountry": "Language & country cannot be blank",
+			"timeZone": "Time zone must not be blank",
+			"email": "Email must be valid"
+			}
+			},
+			"table": {
+			"pageText": "Page",
+			"ofText": "of",
+			"rowsText": "rows"
+			},
+			"dashboardPage": {
+			"header": "Dashboard",
+			"welcome": "Welcome",
+			"loggedInText": "You are now logged in CDH 2."
+			},
+			"pipelinesPage": {
+			"header": "Pipelines"
+			},
+			"transformationPage": {
+			"header": "Test transformation"
+			},
+			"echartsPage": {
+			"header": "Test echarts page"
+			},
+			"userProfile": {
+			"header": "User profile",
+			"basicUserSettings": "Basic user settings",
+			"loginCredentials": "Login credentials",
+			"loginEmail": "Login / E-Mail",
+			"loginPassword": "Password",
+			"accountInformation": "Account information",
+			"assignedRoles": "Assigned roles",
+			"assignedTeams": "Assigned teams",
+			"noTeamsAssigned": "none",
+			"accountExpiration": "Account expiration",
+			"noExpirationDate": "never"
+			},
+			"formats": {
+			"dateFormat": "DD.MM.YYYY"
+			},
+			"languages": {
+			"english": "English",
+			"german": "German"
+			}
+			}

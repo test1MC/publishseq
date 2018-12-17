@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en" xml:lang="en" class="_Skins_CDH2_skin" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>CDH2 data model</title>
+        <script>/* <![CDATA[ */
+			document.title=document.title + " - Customer Data Hub";
+			/* ]]> */</script>
+        <!-- Matomo -->
+        <script type="text/javascript">/* <![CDATA[ */
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setCookieDomain", "*.docu.cdh2.net"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="https://analytics.cdh2.net/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		/* ]]> */</script>
+        <noscript>
+            <p>
+                <img src="https://analytics.cdh2.net/piwik.php?idsite=2&amp;rec=1" style="border: 0;" alt="" />
+            </p>
+        </noscript>
+        <!-- End Matomo Code -->
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.select-language-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/select-language.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/EinzugE5.css" rel="stylesheet" />
+        <script src="../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../home.html" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxybody-container _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic Separator Print SelectBrowseSequence Separator SelectLanguage;">
+                                    <div class="button-group-container-left">
+                                        <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                        </button>
+                                        <button class="button needs-pie next-topic-button" title="Navigate next">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie print-button" title="Print">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                        </button>
+                                        <div class="button-separator">
+                                        </div>
+                                        <button class="button needs-pie select-language-button" title="Change language">
+                                            <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="select language" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="topic-container">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <h1>CDH2 data model</h1>
+                                    <p>CDH2 uses a generic data model (GDM) to define all  data, that you want to be processed. </p>
+                                    <p>This generic data model gives you the flexibility to model your source data in a consistent and coherent way, yet regarding the given structure of your source records. Its prevailing function is to maintain an appropriate mapping between the data of your source records and the data to be processed in the validation, matching or merging phase of your data management tasks.</p>
+                                    <p>More and above this, the GDM is also scalable and expandable according to your prerequisites. This means, for instance, integration of additional master data systems, adding more data objects or defining different versions of the GDM.</p>
+                                    <p>Three elements are crucial for the GDM:</p>
+                                    <ul>
+                                        <li value="1">Entities</li>
+                                        <li value="2">Fields</li>
+                                        <li value="3">Relations</li>
+                                    </ul>
+                                    <p>The following sub-sections discuss some basic principles about this matter.</p>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />The staircase of knowledge</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>You might have heard from the staircase of knowledge, that leads from the lower stair landing - represented by characters or data - to the top step - represented by expertise and competitiveness. Particularly important for our purpose here is the lower part of that staircase: The steps that have to be taken in order to generate information out of data and knowledge out of information. However, let us first come to a better understanding about some concepts on this matter:</p>
+                                            <ul>
+                                                <li value="1">Data are facts about objects, while objects are something touchable, perceptible or imaginable like items or entities.</li>
+                                                <li value="2">Information is data with meaning (semantics).  I.e. Information is data that stands in a meaningful context. Information can be used to prepare decisions or actions.</li>
+                                                <li value="3">Knowledge is the result of a purposeful cross-linking of processed information.</li>
+                                            </ul>
+                                            <p>Knowledge can be distinguished between implicit and explicit knowledge. While implicit knowledge is represented by the personal knowledge, experience or opinion of an individual person, explicit knowledge is available in a methodically and systematically prepared form. Therefore, it is independent from individual persons and can be stored in databases as well as it can be processed by software systems.</p>
+                                            <p>
+                                                <img src="../Resources/Images/A_GeneralOverview/Graphik_KnowledgeStairs_01_620x324.png" style="width: 620;height: 324;" />
+                                            </p>
+                                            <p>The GDM can be seen as a technical implementation of this picture. While data stored in a single data field doesn't deliver any additional meaning at all, an entire record consisting of multiple fields can provide enough additional semantics to generate information. Even more, when the data fields are modeled for different data objects - so called entities. The entity scheme allows to establish relations between different data objects.</p>
+                                            <p> By doing so the GDM adds more context to an information, than you might have expected in the first place. Adding context to an information means to generate knowledge.</p>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Entities</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Entities are classes of data objects like locations, persons or organizations. E.g. the entity 'PERSON' contains fields like 'Salutation', 'Gender' or different name elements, while the entity 'LOCATION' contains fields for postcodes, street names or house numbers. Every record contains data fields that are either part of the 'PERSON' entity or the 'LOCATION' entity.</p>
+                                            <p>Those entities are dependent from each other in various ways. They can be made visible by an extensive set of self defined relations. E.g. a person can be related to a location in more than one way. The location can be a living place, a working place or the place of birth to a person. In a nutshell: The GDM consists from entities, fields and their relations. The following entities are available within the GDM:</p>
+                                            <ul>
+                                                <li value="1">PERSON</li>
+                                                <li value="2">ORGANIZATION</li>
+                                                <li value="3">LOCATION</li>
+                                                <li value="4">PHONE</li>
+                                                <li value="5">EMAIL</li>
+                                                <li value="6">WEBSITE</li>
+                                                <li value="7">META</li>
+                                            </ul>
+                                            <p>The CDH2-GDM provides you with such entities to ensure a consistent and coherent mapping between your source data and the data intended for use in a golden record. And what is more, the GDM enables you to create your own self-defined data model (Customer Data Model (CDM)), that enhances the GDM. This Customer Data Model&#160;(CDM) can be a subset of the GDM but can also extend the given set of entities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Fields</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Fields contain the actual data. These data belongs to certain data types, that are part of the respective field definition. From this perspective data fields can be seen as attributes that describe an entity. For each entity defined within the GDM a different set of fields is determined. Dependent from the type of content that is stored in a field, the data fields can be of different data types, like string, bool or date.</p>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Relations</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>Relations describe how an entity can be dependent from another entity. Important here is, that relations always have a direction: they point from one entity to another. This means that most relations can be seen as hierarchical relations, like a part - whole relation or a child - parent relation and vice verso.</p>
+                                            <p>For example: A person can obviously be related to other persons. The types of relation might be: married to..., customer of ... or child of... . A person can also be related to an organization with relation types like: owner of..., supplier of... or employee of..., etc. However, a relation between entities is not necessarily a 1:1 relation. An organization is probably related to multiple persons like employees, customers or suppliers. A person can be related to multiple locations like working place or place of living. A location, on the other hand, can be related to multiple persons like families living in a flat with a common address .</p>
+                                            <p>With the possibility to select various self defined relations for each entity and to add self-defined relations to your data model, CDH2 provides you with a powerful tool not only to extract and consolidate your customer master data but to gain knowledge about your customers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Cardinality</a></span>
+                                        <div class="MCDropDownBody dropDownBody">
+                                            <p>As mentioned above: Relations always have a direction. By specifying certain rules for a direction, you can control the outcome of processed records. Those rules are called cardinality rules. They govern how many entities of a certain type may occur, given a certain record type and source system. The following cardinalities are available:</p>
+                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/EinzugE5.css');" class="TableStyle-EinzugE5" cellspacing="0">
+                                                <col class="TableStyle-EinzugE5-Column-Column1" style="width: 30mm;" />
+                                                <col class="TableStyle-EinzugE5-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>N:M</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>Multiple source entities can point to multiple target entities. </p>
+                                                            <p>(Default value)</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyE-Column1-Body1">
+                                                            <p>1:M</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyD-Column1-Body1">
+                                                            <p>A single entity points to multiple target entities</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-EinzugE5-Body-Body1">
+                                                        <td class="TableStyle-EinzugE5-BodyB-Column1-Body1">
+                                                            <p>M:1</p>
+                                                        </td>
+                                                        <td class="TableStyle-EinzugE5-BodyA-Column1-Body1">
+                                                            <p>Multiple source entities point to a single target entity</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p>.For more detailed information see <a href="../B_DataModelConfig/DataModelConfig.html" class="MCXref xref"><b>Data model configuration</b></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

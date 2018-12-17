@@ -1,0 +1,1 @@
+define({data:[{code:'en', full:'English‎', target:'en/index.html'}]});
